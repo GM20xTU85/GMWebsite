@@ -1,0 +1,171 @@
+.FAQ
+{
+    min-height:100vh;
+    color:var(--text-black-900);
+    font-family: 'Kanit', sans-serif;
+}
+.row > .header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last:center;
+    margin-bottom:40px;
+}
+.FAQ-items1{
+    display: grid;
+    width: 100%;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 25px;
+}
+.FAQ-items::-webkit-scrollbar{
+    width:5px;
+}
+.FAQ-item{
+    cursor: context-menu;
+    background: var(--bg-black-100);
+    border-radius: 11.2px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    max-width: 725px;
+    height: 400px;
+    overflow: auto;
+    border: 1px solid rgba(255, 255, 255, 0.64);
+}
+.FAQ-item .FAQ-h{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+.FAQ-p{
+    margin:20px 20px;
+    padding:8px;
+    font-size: 19px;
+}
+@media (max-width:1476px){
+    .home .home-img
+    {
+        display:none;
+    }
+    .home .home-info{
+        align-items: center;
+    }
+    .home > .container > .row{
+        justify-content: center;
+    }
+    .Shop .Shop-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .Shop .Shop-grid .Shop-item{
+        align-items: center;
+        width: 500px;
+    }
+}
+@media (max-width:1045px){
+    .Shop .Shop-grid{
+        grid-template-columns: 1fr;
+    }
+    .FAQ-items1{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:895px){
+    .Shop .Shop-grid .Shop-item{
+        align-items: center;
+    }
+}
+@media (max-width:767px)
+{
+    .nav-lists{
+        display:none;
+    }
+    .item-contact{
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact-item:nth-child(7){
+        display: none;
+    }
+    .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 80px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        transform: translatey(-150%);
+        transition: transform 0.3s;
+    }
+    #checkbox_toggle:checked ~ .menu{
+        transform: translatey(0%);
+    }
+    .menu > li {
+        border-radius: 10px;
+        display: flex;
+        justify-content: left;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: white;
+        background-color: rgb(255, 255, 255);
+    }
+    .menu > li:not(:last-child) {
+        border-bottom: 1px solid rgb(175, 175, 175);
+    }
+    .menu > li > a > i{
+        padding-right:20px;
+    }
+    .menu > li > a{
+        font-size: 20px;
+        margin-left:50px;
+        padding:20px;
+        color:black;
+    }
+}
+@media (min-width:767px){
+    .navbar .dropdown,.menu,.hamburger,label{
+        display: none;
+    }
+}
+@media (max-width:900px){
+    .logo h1{
+        display:none;
+    }
+}
+@media (max-width:510px){
+    .Shop .Shop-grid .Shop-item .Shop-item-inner .Shop-img img{
+        width: 200px;
+    }
+    .shadow-dark{
+        box-shadow: none;
+    }
+    .Shop .Shop-grid .Shop-item .Shop-item-inner .Shop-text{
+        width: 300px;
+    }
+    .Shop .Shop-grid .Shop-item{
+        align-items: center;
+        width: 300px;
+        height: 500px;
+    }
+    .item-contact{
+        grid-template-columns: 1fr;
+    }
+    .contact-item:nth-child(7){
+        display: none;
+    }
+    .report-items .report-items2{
+        flex-direction: column;
+        place-items: center;
+    }
+    .report-items h3{
+        display:none;
+    }
+    .FAQ-items1{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+}
