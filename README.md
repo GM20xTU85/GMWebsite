@@ -1,5 +1,5 @@
 <h1 align="center">GMWebsite</h1>
-<p>Welcome to the GMWebsite! This is a static website created by gm20 members ( @Sodynoizz ).</p>
+<p align="center">Welcome to the GMWebsite! This is a static website created by gm20 members ( <a href="https://github.com/Sodynoizz">@Sodynoizz</a> ).</p>
 
 <p align="center">
     <a href="#features">Features</a> |
@@ -70,4 +70,4 @@ git commit -m 'Add feature'
 </ul>
 
 # Special Thanks
-<p>Thank you for <a href="https://github.com/Nowath"></a>Nowath for helping many many things.</p>
+<p>Thank you for <a href="https://github.com/Nowath">@Nowath</a> for helping many many things.</p>
