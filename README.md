@@ -29,9 +29,7 @@ To build the GMWebsite locally, follow the steps:
 <br></br>
 <ol>
     <li>Clone the repository using command</li>
-    ```bash
-    git clone https://github.com/GM20xTU85/GMWebsite.git
-    ```
+    ```git clone https://github.com/GM20xTU85/GMWebsite.git```
     <li> Navigate to the project directory.</li>
     <li>Open the `index.html` file in your preferred web browser.</li>
 </ol>
@@ -42,7 +40,7 @@ We welcome contributions from the community to enhance GMWebsite. If you'd like 
 <ol>
     <li>Fork the repository.</li>
     <li>Create a new branch</li>
-    <li>Make your changes and commit them: `git commit -m 'Add feature'`
+    <li>Make your changes and commit them: ```git commit -m 'Add feature'```
     <li>Push to the branch</li></li>
     <li>Open the pull request, describing your changes and the purpose of the pull request.
 </ol>
