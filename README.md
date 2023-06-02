@@ -30,7 +30,7 @@ To build the GMWebsite locally, follow the steps:
 <ol>
     <li>Clone the repository using command</li>
     <li> Navigate to the project directory.</li>
-    <li>Open the <strong>index.html</strong>file in your preferred web browser.</li>
+    <li>Open the <strong>index.html</strong> file in your preferred web browser.</li>
 </ol>
 
 Note : To clone to repository use the following command:
