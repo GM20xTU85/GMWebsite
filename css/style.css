@@ -8,6 +8,7 @@ body
     --bg-black-100:#fdf9ff;
     --bg-black-50:#e8dfec;
     --color-header:rgb(255, 136, 156);
+    --bg-black-400:black;
     --text-black-900:#302e4d;
     --text-black-900:#504e70;
     --text-link-100:#0000EE;
@@ -23,6 +24,7 @@ body.dark{
     --text-black-900:#cecccc;
     --text-black-900:#ffffff;
     --text-link-100:#9595ff;
+    --bg-black-400:rgb(255, 255, 255);
 }
 *
 {
@@ -199,6 +201,25 @@ ul
 }
 #navbar{
     transition: all 0.5s ease-in-out;
+}
+#myBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 9; 
+    border: none; 
+    outline: none;
+    background-color: var(--bg-black-400); 
+    color: var(--bg-black-900); 
+    cursor: pointer; 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+#myBtn:hover{
+    background-color:var(--bg-black-400);
 }
 /* media */
 @media (max-width:1476px){
