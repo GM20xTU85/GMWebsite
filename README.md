@@ -12,11 +12,14 @@
 </p>
 
 # Features
+
 <b>Book Details</b>: Get comprehensive information about each book, including the title, genre, description and price.
 
 # Technologies-Used
+
 The GMWebsite is built using the following technologies:
 <br>
+
 <ul>
     <li><strong>HTML</strong>: Used for creating the structure layout of the website.</li>
     <li><strong>CSS</strong>: Used for styling the website and making it visually appealing.</li>
@@ -25,20 +28,24 @@ The GMWebsite is built using the following technologies:
 </ul>
 
 # Installation
+
 To build the GMWebsite locally, follow the steps:
 <br></br>
+
 <ol>
     <li>Clone the repository using command</li>
     <li> Navigate to the project directory.</li>
-    <li>Open the <strong>index.html</strong>file in your preferred web browser.</li>
+    <li>Open the <strong>index.html</strong> file in your preferred web browser.</li>
 </ol>
 
 Note : To clone to repository use the following command:
+
 ```bash
 git clone https://github.com/GM20xTU85/GMWebsite.git
 ```
 
-# Contributing 
+# Contributing
+
 We welcome contributions from the community to enhance GMWebsite. If you'd like to contribute, please follow these steps:
 
 <ol>
@@ -50,14 +57,18 @@ We welcome contributions from the community to enhance GMWebsite. If you'd like 
 </ol>
 
 Note: To commit the repository use the following command:
+
 ```bash
 git commit -m 'Add feature'
 ```
 
 # Screenshots
+
 ![image](https://i.imgur.com/YSvOFz5.png)
 ![image](https://i.imgur.com/3vM9QmD.png)
-# Contact   
+
+# Contact
+
 <p>If you have any questions, suggestions, or feedback regarding the GMWebsite, please reach out to us at gm20xtu85@gmail.com or following links</p>
 
 <ul>
@@ -70,4 +81,5 @@ git commit -m 'Add feature'
 </ul>
 
 # Special Thanks
+
 <p>Thank you for <a href="https://github.com/Nowath">@Nowath</a> for helping many many things.</p>
