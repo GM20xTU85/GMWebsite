@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffffe3;
+    filter: blur(4px);
+    transition: opacity 0.75s, visibility 0.75s;
+    z-index:4;
+}
+.content-loader{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index:5;
+}
+.lemon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: none;
+    margin-bottom:20px;
+    transition: opacity 0.75s, visibility 0.75s;
+    z-index:5;
+}
+.loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+.lemon::before{
+    content: "";
+    position:fixed;
+    width: 80px;
+    height: 80px;
+    border: 20px solid #000000;
+    border-radius: 50%;
+}
+.lemon::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #ffffff;
+    border-top-color: #5afa67;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+.loader h1{
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: none;
+    transition: opacity 0.75s, visibility 0.75s;
+    z-index:6;
+    font-size: 40px;
+    font-family: 'Kanit', sans-serif;
+}
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
