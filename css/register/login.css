@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Kanit', sans-serif;
+    background-image: url(../image/pic/BG-login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.main-contant .login{
+    width: 400px;
+    height:500px;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.37);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.content{
+    margin:auto auto;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.content > p{
+    font-size:20px;
+}
+.header{
+    cursor: context-menu;
+}
+#username,#password{
+    outline: none;
+    border:none;
+    padding: 5px 2px;
+    margin:20px 5px;
+    font-size:16px;
+    background: none;
+    border-bottom: 1px solid black;
+    transition: all 0.3s ease-in-out;
+    position:relative;
+}
+#username::placeholder,#password::placeholder{
+    font-family: 'Kanit', sans-serif;
+}
+#username:focus,#password:focus{
+    border-bottom: 1px solid rgb(0, 138, 46);
+}
+#Submit{
+    border:none;
+    cursor: pointer;
+    border-radius:5px;
+    margin:20px;
+    padding:10px 40px;
+    color:black;
+    font-weight: 200;
+    font-size:20px;
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.1px);
+    -webkit-backdrop-filter: blur(4.1px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease-in
+}
+#Submit:hover{
+    transform: scale(1.1,1.1);
+}
+#Submit-Signup{
+    border:none;
+    cursor: pointer;
+    border-radius:5px;
+    margin:20px;
+    padding:10px 40px;
+    color:black;
+    font-weight: 200;
+    font-size:15px;
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.1px);
+    -webkit-backdrop-filter: blur(4.1px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease-in
+}
+#Submit-Signup:hover{
+    transform: scale(1.1,1.1);
+}
+.footer{
+    margin-top:40px;
+    display:flex;
+    font-size:15px;
+}
+.footer h4{
+    color: rgb(58, 58, 58);
+    margin-right:2px;
+}
+.hidden{
+    display:none !important;
+}
+.main-contant .Signup{
+    position:fixed;
+    width: 400px;
+    height:500px;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.37);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transform: translateY(100px); /*transform: translateY(-500px);*/
+    display:none;
+}
+#username-Signup,#password-Signup{
+    outline: none;
+    border:none;
+    padding:5px 20px;
+    margin:20px 5px;
+    font-size:15px;
+    background: none;
+    border-bottom: 1px solid black;
+    transition: all 0.3s ease-in-out;
+    position:relative;
+}
+#username-Signup:focus,#password-Signup:focus{
+    border-bottom: 1px solid rgb(0, 138, 46);
+} 
