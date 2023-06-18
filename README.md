@@ -8,6 +8,7 @@
     <a href="#contributing">Contributing</a> |
     <a href="#screenshots">Screenshots</a>|
     <a href="#contact">Contact</a> |
+    <a href="#todo">To do   </a>
     <a href="#special-thanks">Special Thanks</a>
 </p>
 
@@ -25,6 +26,7 @@ The GMWebsite is built using the following technologies:
     <li><strong>CSS</strong>: Used for styling the website and making it visually appealing.</li>
     <li><strong>Javascript</strong>: Used for implementing interactive features such as Dark / Light mode theme, Navigation bar implementation etc.</li>
     <li><strong>Bootstrap</strong>: Utilized to enhance the responsiveness and overall design of the website.</li>
+
 </ul>
 
 # Installation
@@ -34,7 +36,7 @@ To build the GMWebsite locally, follow the steps:
 
 <ol>
     <li>Clone the repository using command</li>
-    <li> Navigate to the project directory.</li>
+    <li>Navigate to the project directory.</li>
     <li>Open the <strong>index.html</strong> file in your preferred web browser.</li>
 </ol>
 
@@ -78,6 +80,11 @@ git commit -m 'Add feature'
     <li>Line Openchat: <a href="https://line.me/ti/g2/zfJb9PFSGbmwQuxA20u58rJergn5cWpCKKKqyg?utm_source=invitation&utm_medium=link_copy&utm_campaign=default">https://bit.ly/gm20-line-openchat</a></li>
     <li>Line Official: <a href="https://line.me/R/ti/p/@753mhkdq">https://line.me/R/ti/p/@753mhkdq</a></li>
     <li>Discord: <a href="https://discord.gg/2UZWu2rW4m">https://discord.gg/2UZWu2rW4m</a></li>
+</ul>
+
+# TODO
+<ul>
+    <li>Login Page using firebase authentication</li>
 </ul>
 
 # Special Thanks

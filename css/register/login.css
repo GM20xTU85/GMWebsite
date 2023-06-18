@@ -13,6 +13,9 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+a{
+    text-decoration: none;
+}
 .container{
     width: 100vw;
     height: 100vh;
@@ -35,37 +38,62 @@ body{
     -webkit-backdrop-filter: blur(6.2px);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
-.content{
+.content #Login-submit{
     margin:auto auto;
     display:flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
 }
-.content > p{
+.content #Login-submit p{
     font-size:20px;
+}
+.content #Login-submit{
+    margin:auto auto;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.content #Signup-submit{
+    margin:auto auto;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.content #Signup-submit p{
+    font-size:20px;
+}
+.content #Signup-submit{
+    margin:auto auto;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
 }
 .header{
     cursor: context-menu;
+    margin-bottom:30px;
 }
-#username,#password{
+#username-login,#password-login{
     outline: none;
     border:none;
     padding: 5px 2px;
     margin:20px 5px;
     font-size:16px;
-    background: none;
+    background: transparent;
     border-bottom: 1px solid black;
     transition: all 0.3s ease-in-out;
     position:relative;
 }
-#username::placeholder,#password::placeholder{
+#username-login::placeholder,#password-login::placeholder{
     font-family: 'Kanit', sans-serif;
 }
-#username:focus,#password:focus{
+#username-login:focus,#password-login:focus{
     border-bottom: 1px solid rgb(0, 138, 46);
 }
-#Submit{
+#submit-login{
     border:none;
     cursor: pointer;
     border-radius:5px;
@@ -82,10 +110,10 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.3);
     transition: all 0.3s ease-in
 }
-#Submit:hover{
+#submit-login:hover{
     transform: scale(1.1,1.1);
 }
-#Submit-Signup{
+#submit-signup{
     border:none;
     cursor: pointer;
     border-radius:5px;
@@ -102,13 +130,19 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.3);
     transition: all 0.3s ease-in
 }
-#Submit-Signup:hover{
+#submit-signup:hover{
     transform: scale(1.1,1.1);
 }
 .footer{
     margin-top:40px;
     display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size:15px;
+}
+.footer > div:nth-child(1){
+    display:flex;
 }
 .footer h4{
     color: rgb(58, 58, 58);
@@ -118,7 +152,6 @@ body{
     display:none !important;
 }
 .main-contant .Signup{
-    position:fixed;
     width: 400px;
     height:500px;
     padding:20px;
@@ -131,20 +164,48 @@ body{
     backdrop-filter: blur(6.2px);
     -webkit-backdrop-filter: blur(6.2px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    transform: translateY(100px); /*transform: translateY(-500px);*/
     display:none;
 }
-#username-Signup,#password-Signup{
+#username-signup,#password-signup{
     outline: none;
     border:none;
-    padding:5px 20px;
+    padding: 5px 2px;
     margin:20px 5px;
-    font-size:15px;
-    background: none;
+    font-size:16px;
+    background: transparent;
     border-bottom: 1px solid black;
     transition: all 0.3s ease-in-out;
     position:relative;
 }
-#username-Signup:focus,#password-Signup:focus{
+#username-signup::placeholder,#password-signup::placeholder{
+    font-family: 'Kanit', sans-serif;
+}
+#username-signup:focus,#password-signup:focus{
     border-bottom: 1px solid rgb(0, 138, 46);
 } 
+@media (max-height: 505px){
+    .main-contant .login{
+        width: 600px;
+        height:400px;
+    }
+    .main-contant .Signup{
+        width: 600px;
+        height:400px;
+    }
+    .content{
+        display:grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .content #Login-submit{
+        margin:0;
+    }
+    .content #Signup-submit{
+        margin:0;
+    }
+    .footer{
+        margin-top: 0px;
+    }
+}
