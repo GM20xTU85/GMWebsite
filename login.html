@@ -24,45 +24,65 @@
                     <h1>Login</h1>
                 </div>
                 <div class="content">
-                    <p>Username</p>
+                    <form id="Login-submit" onsubmit="Login">
+                        <p>Username</p>
+                        <input type="text" name="" id="username-login" placeholder="Username">
+                        <p>Password</p>
+                        <input type="password" name=""  id="password-login" placeholder="Password">
+                        <input type="submit" id="submit-login" value="Login" style="font-family: 'Kanit', sans-serif; font-size:20px;"></input>
+                    </form>
+                    <!-- <p>Username</p>
                     <form action="">
-                        <input type="text" name="" id="username" placeholder="Username">
+                        <input type="text" name="" id="username-login" placeholder="Username">
                     </form>
                     <p>Password</p>
                     <form action="">
-                        <input type="password" name="" id="password" placeholder="Password">
+                        <input type="password" name="" id="password-login" placeholder="Password">
                     </form>
                     <form action="">
-                        <input type="Submit" name="" id="Submit" value="Login" style="font-family: 'Kanit', sans-serif;">
-                    </form>
+                        <input type="Submit" name="" id="submit-login" value="Login" style="font-family: 'Kanit', sans-serif;">
+                    </form> -->
+                    <div class="footer">
+                    <div>
+                        <h4>Haven't Registered?</h4><a id="Signup" style="cursor:pointer; color:rgb(48, 0, 138);">Register</a>
+                    </div>
+                    <div>
+                        <a style="cursor:pointer; color:rgb(48, 0, 138);" id="Forget">Forgot password?</a>
+                    </div> 
                 </div>
-                <div class="footer">
-                    <h4>No account?</h4><a href="#" id="Signup">Sign up</a>
                 </div>
             </div>
             <div class="Signup">
                 <div class="header">
-                    <h1>Sign-up</h1>
+                    <h1>Register</h1>
                 </div>
                 <div class="content">
-                    <p>Username</p>
+                    <form action="" id="Signup-submit">
+                        <p>Username</p>
+                        <input type="text" name="" id="username-signup" placeholder="Username">
+                        <p>Password</p>
+                        <input type="password" name="" id="password-signup" placeholder="Password">
+                        <input type="submit" id="submit-signup" value="Register" style="font-family: 'Kanit', sans-serif; font-size:20px;"></input>
+                    </form>
+                    <!-- <p>Username</p>
                     <form action="">
-                        <input type="text" name="" id="username-Signup" placeholder="Username">
+                        <input type="text" name="" id="username-signup" placeholder="Username">
                     </form>
                     <p>Password</p>
                     <form action="">
-                        <input type="password" name="" id="password-Signup" placeholder="Password">
+                        <input type="password" name="" id="password-signup" placeholder="Password">
                     </form>
                     <form action="">
-                        <input type="Submit" name="" id="Submit-Signup" value="Register">
-                    </form>
-                </div>
-                <div class="footer">
-                    <h4>Have an account?</h4><a href="#" id="Login">Login</a>
+                        <input type="submit" name="" id="submit-signup" value="Register" style="font-family: 'Kanit', sans-serif; font-size:20px;">
+                    </form> -->
+                    <div class="footer">
+                        <h4>Already a member?</h4><a id="Login" style="cursor:pointer; color:rgb(48, 0, 138);">Login</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <script type="module" src="./js/backend/index.js"></script>
     <script src="./js/frontend/login.js"></script>
     <script src="./js/frontend/loading.js"></script>
 </body>

@@ -1,12 +1,12 @@
 {
-    "iis.configDir": "",
-    "spellright.language": [],
-    "spellright.documentTypes": [
-        "latex",
-        "plaintext"
-    ], 
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
-    "editor.formatOnSaveMode": "modificationsIfAvailable",
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "iis.configDir": "",
+  "spellright.language": [],
+  "spellright.documentTypes": ["latex", "plaintext"],
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "ms-vsliveshare.vsliveshare"
+  }
 }
