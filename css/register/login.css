@@ -9,7 +9,7 @@
 }
 body{
     font-family: 'Kanit', sans-serif;
-    background-image: url(../../image/pic/BG-login.png);
+    background-image: url(../../image/pic/BG-login.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -65,43 +65,36 @@ a{
 .content #Signup-submit p{
     font-size:20px;
 }
-.content #Signup-submit{
-    margin:auto auto;
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-}
 .header{
     cursor: context-menu;
     margin-bottom:30px;
 }
-#username-login,#password-login{
+#email-login,#password-login{
     outline: none;
-    border:none;
+    border: none;
     padding: 5px 2px;
-    margin:20px 5px;
-    font-size:16px;
+    margin: 20px 5px;
+    font-size: 16px;
     background: transparent;
     border-bottom: 1px solid black;
     transition: all 0.3s ease-in-out;
-    position:relative;
+    position: relative;
 }
-#username-login::placeholder,#password-login::placeholder{
+#email-login::placeholder,#password-login::placeholder{
     font-family: 'Kanit', sans-serif;
 }
-#username-login:focus,#password-login:focus{
+#email-login:focus,#password-login:focus{
     border-bottom: 1px solid rgb(0, 138, 46);
 }
 #submit-login{
-    border:none;
+    border: none;
     cursor: pointer;
-    border-radius:5px;
-    margin:20px;
-    padding:10px 40px;
-    color:black;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px 40px;
+    color: black;
     font-weight: 200;
-    font-size:20px;
+    font-size: 20px;
     background: rgba(255, 255, 255, 0.92);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -110,6 +103,7 @@ a{
     border: 1px solid rgba(255, 255, 255, 0.3);
     transition: all 0.3s ease-in
 }
+
 #submit-login:hover{
     transform: scale(1.1,1.1);
 }
@@ -153,7 +147,6 @@ a{
 }
 .main-contant .Signup{
     width: 400px;
-    height:500px;
     padding:20px;
     display:flex;
     flex-direction: column;
@@ -166,7 +159,7 @@ a{
     border: 1px solid rgba(255, 255, 255, 0.3);
     display:none;
 }
-#username-signup,#password-signup{
+#username-signup,#email-signup,#password-signup{
     outline: none;
     border:none;
     padding: 5px 2px;
@@ -177,10 +170,10 @@ a{
     transition: all 0.3s ease-in-out;
     position:relative;
 }
-#username-signup::placeholder,#password-signup::placeholder{
+#username-signup::placeholder,#email-signup::placeholder,#password-signup::placeholder{
     font-family: 'Kanit', sans-serif;
 }
-#username-signup:focus,#password-signup:focus{
+#username-signup:focus,#email-signup:focus,#password-signup:focus{
     border-bottom: 1px solid rgb(0, 138, 46);
 } 
 @media (max-height: 505px){
@@ -204,6 +197,9 @@ a{
     }
     .content #Signup-submit{
         margin:0;
+    }
+    .content #Signup-submit p{
+        font-size:15px;
     }
     .footer{
         margin-top: 0px;

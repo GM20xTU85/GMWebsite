@@ -304,3 +304,6 @@
     row-gap: 20px;
   }
 }
+.username-display{
+  color: var(--text-black-900)
+}
