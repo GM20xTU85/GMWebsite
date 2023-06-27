@@ -44,7 +44,7 @@
     <div class="mains-container">
         <!-- ==== Navbar Start ==== -->
         <div class="navbar" id="navbar">
-            <div class="logo">
+            <div class="logo" onclick="topFunction()">
                 <img class="logoimg" onClick="home" src="./image/pic/GM_logo1.jpg" width="80px" alt="LOGO" id="logo">
                 <h1>GIFTED MATH</h1>
             </div>
@@ -61,15 +61,19 @@
                 <span></span>
             </div>
             <div class="nav-dropdown">
-                <a href="#home" class=".dropdown-lists"><i class="fa-solid fa-house"></i><p>Home</p></a>
-                <a href="#Shop" class=".dropdown-lists"><i class="fa-solid fa-cart-shopping"></i><p>Shop</p></a>
-                <a href="#Contact" class=".dropdown-lists"><i class="fa-solid fa-address-book"></i><p>Report</p></a>
-                <a href="#FAQ" class=".dropdown-lists"><i class="fa-solid fa-question"></i><p>FAQ</p></a>
-                <a href="#" onclick="clickLogin()" class="Btn_login"><i class="fa-solid fa-user"></i><span class="username-display">Login</span></a>
+                <a href="#home" class="dropdown-lists"><i class="fa-solid fa-house"></i><p>Home</p></a>
+                <a href="#Shop" class="dropdown-lists"><i class="fa-solid fa-cart-shopping"></i><p>Shop</p></a>
+                <a href="#Contact" class="dropdown-lists"><i class="fa-solid fa-address-book"></i><p>Report</p></a>
+                <a href="#FAQ" class="dropdown-lists"><i class="fa-solid fa-question"></i><p>FAQ</p></a>
                 <a class="change1"><i class="fa-solid fa-moon"></i>Switch Theme</a>
+                <a href="#"><i class="dropdown-lists fa-solid fa-user"></i><span class="username-display"></span></a>
+                <a href="#" onclick="clickLogin()" class="dropdown-lists Btn_LogInOut Btn_Login"><i class="fa-solid fa-arrow-right-to-bracket"></i>Login</a>
+                <a href="#" onclick="clickLogout()" class="dropdown-lists Btn_LogInOut Btn_Logout"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
             </div>
             <div class="bottom">
-                <a href="#" onclick="clickLogin()" class="username-display" class="Btn_login">Login</a>
+                <a href="#" class="user"><i class="fa-solid fa-user"></i><span class="username-display"></span></a>
+                <a href="#" onclick="clickLogin()" class="Btn_LogInOut Btn_Login Btntwo"><i class="fa-solid fa-arrow-right-to-bracket"></i>Login</a>
+                <a href="#" onclick="clickLogout()" class="Btn_LogInOut Btn_Logout Btnthree"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
                 <a class="change"><i class="fa-solid fa-moon"></i></a>
             </div>
         </div>
@@ -130,7 +134,7 @@
                             <div class="Shop-item padd-15">
                                 <div class="Shop-item-inner shadow-dark">
                                     <div class="Shop-img">
-                                        <img src="./image/Shop/Book1.jpg" alt="">
+                                        <img src="./image/Shop/Book1.png" alt="">
                                     </div>
                                     <div class="Shop-text">
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, fugit numquam ipsa, dolorem consectetur architecto illo vel soluta aperiam aliquid voluptatem atque fugiat enim molestias repellat! Eveniet esse ducimus cumque illo temporibus, ipsa modi optio ratione consequuntur dolorum nesciunt dolorem voluptatum provident sapiente fugiat aperiam pariatur vitae delectus. Corporis, iusto qui laudantium nostrum, dolor, unde iure veniam beatae doloremque autem expedita fugit natus optio fuga laboriosam. Excepturi quos, corporis ratione id, atque laboriosam voluptate quaerat sit saepe eligendi, consectetur velit earum tempore ducimus eos sapiente inventore. Optio magnam doloremque ullam, illum nemo quasi a deleniti vitae earum fugit, dicta consectetur suscipit voluptatibus adipisci hic quos sint impedit dolore autem illo repudiandae voluptate maxime similique. Dignissimos incidunt ratione sequi? Consequatur illo, quam esse mollitia quo, obcaecati dolores fuga excepturi magnam illum quibusdam quos maiores, laborum enim cupiditate. Laborum excepturi architecto dignissimos quod rem. Eligendi facere consequuntur quae explicabo doloribus, illum quis eos inventore eius? Nihil reiciendis dicta molestiae modi assumenda, eveniet sequi exercitationem repellat, blanditiis voluptate saepe laborum autem molestias quis porro sed expedita alias cupiditate ducimus vero reprehenderit pariatur animi enim. Esse necessitatibus provident, obcaecati blanditiis, est similique saepe perspiciatis perferendis ipsum debitis ut tenetur, incidunt ipsam quia reiciendis eos.</p>
@@ -145,7 +149,7 @@
                             <div class="Shop-item padd-15">
                                 <div class="Shop-item-inner shadow-dark">
                                     <div class="Shop-img">
-                                        <img src="./image/Shop/Book2.jpg" alt="">
+                                        <img src="./image/Shop/Book2.png" alt="">
                                     </div>
                                     <div class="Shop-text">
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, fugit numquam ipsa, dolorem consectetur architecto illo vel soluta aperiam aliquid voluptatem atque fugiat enim molestias repellat! Eveniet esse ducimus cumque illo temporibus, ipsa modi optio ratione consequuntur dolorum nesciunt dolorem voluptatum provident sapiente fugiat aperiam pariatur vitae delectus. Corporis, iusto qui laudantium nostrum, dolor, unde iure veniam beatae doloremque autem expedita fugit natus optio fuga laboriosam. Excepturi quos, corporis ratione id, atque laboriosam voluptate quaerat sit saepe eligendi, consectetur velit earum tempore ducimus eos sapiente inventore. Optio magnam doloremque ullam, illum nemo quasi a deleniti vitae earum fugit, dicta consectetur suscipit voluptatibus adipisci hic quos sint impedit dolore autem illo repudiandae voluptate maxime similique. Dignissimos incidunt ratione sequi? Consequatur illo, quam esse mollitia quo, obcaecati dolores fuga excepturi magnam illum quibusdam quos maiores, laborum enim cupiditate. Laborum excepturi architecto dignissimos quod rem. Eligendi facere consequuntur quae explicabo doloribus, illum quis eos inventore eius? Nihil reiciendis dicta molestiae modi assumenda, eveniet sequi exercitationem repellat, blanditiis voluptate saepe laborum autem molestias quis porro sed expedita alias cupiditate ducimus vero reprehenderit pariatur animi enim. Esse necessitatibus provident, obcaecati blanditiis, est similique saepe perspiciatis perferendis ipsum debitis ut tenetur, incidunt ipsam quia reiciendis eos.</p>
@@ -160,7 +164,7 @@
                             <div class="Shop-item padd-15">
                                 <div class="Shop-item-inner shadow-dark">
                                     <div class="Shop-img">
-                                        <img src="./image/Shop/Book3.jpg" alt="">
+                                        <img src="./image/Shop/Book3.png" alt="">
                                     </div>
                                     <div class="Shop-text">
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, fugit numquam ipsa, dolorem consectetur architecto illo vel soluta aperiam aliquid voluptatem atque fugiat enim molestias repellat! Eveniet esse ducimus cumque illo temporibus, ipsa modi optio ratione consequuntur dolorum nesciunt dolorem voluptatum provident sapiente fugiat aperiam pariatur vitae delectus. Corporis, iusto qui laudantium nostrum, dolor, unde iure veniam beatae doloremque autem expedita fugit natus optio fuga laboriosam. Excepturi quos, corporis ratione id, atque laboriosam voluptate quaerat sit saepe eligendi, consectetur velit earum tempore ducimus eos sapiente inventore. Optio magnam doloremque ullam, illum nemo quasi a deleniti vitae earum fugit, dicta consectetur suscipit voluptatibus adipisci hic quos sint impedit dolore autem illo repudiandae voluptate maxime similique. Dignissimos incidunt ratione sequi? Consequatur illo, quam esse mollitia quo, obcaecati dolores fuga excepturi magnam illum quibusdam quos maiores, laborum enim cupiditate. Laborum excepturi architecto dignissimos quod rem. Eligendi facere consequuntur quae explicabo doloribus, illum quis eos inventore eius? Nihil reiciendis dicta molestiae modi assumenda, eveniet sequi exercitationem repellat, blanditiis voluptate saepe laborum autem molestias quis porro sed expedita alias cupiditate ducimus vero reprehenderit pariatur animi enim. Esse necessitatibus provident, obcaecati blanditiis, est similique saepe perspiciatis perferendis ipsum debitis ut tenetur, incidunt ipsam quia reiciendis eos.</p>
@@ -175,7 +179,7 @@
                             <div class="Shop-item padd-15">
                                 <div class="Shop-item-inner shadow-dark">
                                     <div class="Shop-img">
-                                        <img src="./image/Shop/Bookset2.jpg" alt="">
+                                        <img src="./image/Shop/Bookset2.png" alt="">
                                     </div>
                                     <div class="Shop-text">
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, fugit numquam ipsa, dolorem consectetur architecto illo vel soluta aperiam aliquid voluptatem atque fugiat enim molestias repellat! Eveniet esse ducimus cumque illo temporibus, ipsa modi optio ratione consequuntur dolorum nesciunt dolorem voluptatum provident sapiente fugiat aperiam pariatur vitae delectus. Corporis, iusto qui laudantium nostrum, dolor, unde iure veniam beatae doloremque autem expedita fugit natus optio fuga laboriosam. Excepturi quos, corporis ratione id, atque laboriosam voluptate quaerat sit saepe eligendi, consectetur velit earum tempore ducimus eos sapiente inventore. Optio magnam doloremque ullam, illum nemo quasi a deleniti vitae earum fugit, dicta consectetur suscipit voluptatibus adipisci hic quos sint impedit dolore autem illo repudiandae voluptate maxime similique. Dignissimos incidunt ratione sequi? Consequatur illo, quam esse mollitia quo, obcaecati dolores fuga excepturi magnam illum quibusdam quos maiores, laborum enim cupiditate. Laborum excepturi architecto dignissimos quod rem. Eligendi facere consequuntur quae explicabo doloribus, illum quis eos inventore eius? Nihil reiciendis dicta molestiae modi assumenda, eveniet sequi exercitationem repellat, blanditiis voluptate saepe laborum autem molestias quis porro sed expedita alias cupiditate ducimus vero reprehenderit pariatur animi enim. Esse necessitatibus provident, obcaecati blanditiis, est similique saepe perspiciatis perferendis ipsum debitis ut tenetur, incidunt ipsam quia reiciendis eos.</p>
@@ -190,7 +194,7 @@
                             <div class="Shop-item padd-15">
                                 <div class="Shop-item-inner shadow-dark">
                                     <div class="Shop-img">
-                                        <img src="./image/Shop/Bookset3.jpg" alt="">
+                                        <img src="./image/Shop/Bookset3.png" alt="">
                                     </div>
                                     <div class="Shop-text">
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, fugit numquam ipsa, dolorem consectetur architecto illo vel soluta aperiam aliquid voluptatem atque fugiat enim molestias repellat! Eveniet esse ducimus cumque illo temporibus, ipsa modi optio ratione consequuntur dolorum nesciunt dolorem voluptatum provident sapiente fugiat aperiam pariatur vitae delectus. Corporis, iusto qui laudantium nostrum, dolor, unde iure veniam beatae doloremque autem expedita fugit natus optio fuga laboriosam. Excepturi quos, corporis ratione id, atque laboriosam voluptate quaerat sit saepe eligendi, consectetur velit earum tempore ducimus eos sapiente inventore. Optio magnam doloremque ullam, illum nemo quasi a deleniti vitae earum fugit, dicta consectetur suscipit voluptatibus adipisci hic quos sint impedit dolore autem illo repudiandae voluptate maxime similique. Dignissimos incidunt ratione sequi? Consequatur illo, quam esse mollitia quo, obcaecati dolores fuga excepturi magnam illum quibusdam quos maiores, laborum enim cupiditate. Laborum excepturi architecto dignissimos quod rem. Eligendi facere consequuntur quae explicabo doloribus, illum quis eos inventore eius? Nihil reiciendis dicta molestiae modi assumenda, eveniet sequi exercitationem repellat, blanditiis voluptate saepe laborum autem molestias quis porro sed expedita alias cupiditate ducimus vero reprehenderit pariatur animi enim. Esse necessitatibus provident, obcaecati blanditiis, est similique saepe perspiciatis perferendis ipsum debitis ut tenetur, incidunt ipsam quia reiciendis eos.</p>
@@ -279,10 +283,10 @@
                                 <div class="htext">Email</div>
                                 <div class="text">gm20xtu85@gmail.com</div>
                             </div>
-                            <div class="contact-item  ">
+                            <div class="contact-item">
                                 
                             </div>
-                            <div class="contact-item  ">
+                            <div class="contact-item">
                                 <div class="logo-contact-discord">
                                     <i class="fab fa-discord fa-4x"></i>
                                 </div>
@@ -357,14 +361,13 @@
         </div>
         <!-- ==== Mains Content End ==== -->
     </div>
-    <!-- ==== Mains Container End ==== -->
-    <!--=======JS File=======-->
-    <script src="./js/frontend/dropdown.js"></script>
-    <script src="./js/frontend/loading.js"></script>
-    <script src="./js/frontend/scroll.js"></script>
-    <script src="./js/frontend/theme.js"></script>
-    <script src="./js/frontend/localstoragecheck.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+ === Mains Container End ==== -->
+    <!--====e=======-->></script>
+    <script src="./js/dropdown.js"></script>
+    <script src="./js/loading.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/theme.js"></script>
+    <script src="./js/account.js"></script>dnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 </body>
 </html>

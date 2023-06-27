@@ -18,8 +18,8 @@
   width: 100%;
   justify-items: center;
   grid-template-columns: 1fr 1fr;
-  column-gap: 20px;
-  row-gap: 25px;
+  column-gap: 30px;
+  row-gap: 50px;
 }
 .FAQ-items::-webkit-scrollbar {
   width: 5px;
@@ -45,7 +45,7 @@
   padding: 8px;
   font-size: 19px;
 }
-@media (max-width: 1476px) {
+@media (max-width: 1065px) {
   .home .home-img {
     display: none;
   }
@@ -76,7 +76,7 @@
     align-items: center;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 850px) {
   .nav-lists {
     display: none;
   }
@@ -123,7 +123,7 @@
     color: black;
   }
 }
-@media (min-width: 767px) {
+@media (min-width: 1065px) {
   .navbar .dropdown,
   .menu,
   .hamburger,

@@ -75,7 +75,7 @@ h3.my-profession {
     align-items: center;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1065px) {
   .nav-lists {
     display: none;
   }
@@ -122,7 +122,7 @@ h3.my-profession {
     color: black;
   }
 }
-@media (min-width: 767px) {
+@media (min-width: 1065px) {
   .navbar .dropdown,
   .menu,
   .hamburger,
